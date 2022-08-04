@@ -1,0 +1,494 @@
+/* Primary colors */
+:root {
+  --white: #ffffff;
+  --dark-bg: #2f2e41;
+  --blue: #60afff;
+  --grey: #f6f6f6;
+}
+
+/* Primary Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto&display=swap");
+
+/* SHARED STYLES */
+.header-font-bold {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.header-font {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.custom-button {
+  color: var(--blue);
+  border-radius: 20px;
+  border-color: var(--blue);
+  min-width: 164px;
+}
+.custom-button:hover {
+  color: var(--white);
+  border-color: var(--blue);
+  background-color: var(--blue);
+}
+
+.schring-icon {
+  max-width: 125px;
+  max-height: 115px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.custom-card {
+  background-color: var(--white);
+  padding: 20px 40px 20px 40px;
+  text-align: center;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 10px;
+  margin-bottom: 125px;
+  margin-top: -90px;
+}
+
+.custom-card-main {
+  background-color: var(--white);
+  padding: 20px 40px 20px 40px;
+  max-width: 250px;
+  max-height: 250px;
+  border-radius: 10px;
+  margin-bottom: 125px;
+  margin-top: -90px;
+  border: 3px solid var(--white);
+  border-top-color: var(--blue) !important;
+}
+.custom-card-careers {
+  background-color: var(--white);
+  padding: 20px 40px 20px 40px;
+  border-radius: 10px;
+  border: 2px solid var(--grey);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  max-width: 360px;
+}
+
+/* Navbar styling */
+nav .navbar-nav li a {
+  color: var(--white) !important;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+nav .navbar-nav li a:hover {
+  color: var(--blue) !important;
+}
+.bg-custom-dark {
+  background-color: var(--dark-bg);
+}
+.logo {
+  max-width: 100px;
+}
+.custom-right-margin {
+  margin-right: 40px;
+}
+.nav-item {
+  padding-right: 14px;
+}
+/* .nav-btn {
+  border-color: var(--white);
+} */
+
+/* Footer styling */
+footer {
+  background-color: var(--dark-bg);
+}
+.footer-icon {
+  margin: 0px 5px 0px 5px;
+}
+
+/* Media Queries */
+/* Big Laptop */
+@media (max-width: 1440px) {
+  .top-text-content h1 {
+    text-align: center;
+    margin-top: -500px;
+    margin-bottom: 404px;
+  }
+  .part-one-about {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  .right-text-about {
+    padding-left: 50px !important;
+  }
+}
+
+/* Normal size laptop */
+@media (max-width: 1024px) {
+  .top-text-content h1 {
+    text-align: center;
+    margin-top: -350px;
+    margin-bottom: 260px;
+  }
+}
+
+/* Tablet size */
+@media (max-width: 768px) {
+  .top-text-content h1 {
+    text-align: center;
+    margin-top: -250px;
+    margin-bottom: 170px;
+  }
+  /* Careers Page */
+  .part-one-careers {
+    margin-left: 20px !important;
+  }
+  /* Contact Us Page */
+  .left-image-contact {
+    display: none;
+  }
+  .right-form-contact {
+    padding-left: 20px !important;
+    margin-left: 10px !important;
+  }
+  .vertical-nav {
+    position: fixed;
+    float: right;
+    width: 8%;
+    left: 85% !important;
+    top: 20% !important;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 500px) {
+  #actual-video {
+    display: none;
+  }
+  .mobile-poster {
+    display: block !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 350px;
+  }
+  .top-text-content h1 {
+    text-align: center;
+    margin-top: -210px;
+  }
+  /* Part 2 */
+  .left-image {
+    display: none;
+  }
+  .side-content {
+    max-height: none !important;
+    margin-bottom: 2rem;
+  }
+  /* part 3 */
+  .part-three {
+    height: 170px !important;
+  }
+  /* Part 4 */
+  .schring-icon {
+    max-width: 95px;
+    max-height: 85px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .custom-card-main {
+    background-color: var(--white);
+    padding: 10px 20px 10px 20px;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-bottom: 95px;
+    margin-top: -60px;
+    border: 3px solid var(--white);
+    border-top-color: var(--blue) !important;
+  }
+
+  .custom-card {
+    background-color: var(--white);
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 10px;
+    margin-bottom: 95px;
+    margin-top: -60px;
+  }
+  .service-icons {
+    width: 100% !important;
+  }
+
+  /* ABOUT PAGE */
+  .left-image-about {
+    display: none;
+  }
+  .right-text-about {
+    padding-left: 10px !important;
+  }
+  .mobile-bg {
+    display: block !important;
+    min-height: 300px;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    margin-bottom: 55px;
+  }
+  .mobile-header-text {
+    padding-top: 135px;
+  }
+  .large-header-text {
+    display: none;
+  }
+
+  /* Teams Page */
+  .part-one-team {
+    min-height: 250px !important;
+  }
+
+  /* Services Page */
+  .left-image-services {
+    display: none;
+  }
+  .right-image-services {
+    display: none;
+  }
+  .vertical-nav {
+    display: none;
+  }
+
+  /* Careers Page */
+  .part-one-careers {
+    margin-left: 20px !important;
+  }
+  .career-form {
+    width: 90% !important;
+  }
+
+  /* Contact Us Page */
+  .left-image-contact {
+    display: none;
+  }
+  .right-form-contact {
+    padding-left: 20px !important;
+    margin-left: 10px !important;
+  }
+}
+
+/* HOMEPAGE SETTINGS */
+#actual-video {
+  width: 100%;
+}
+.mobile-poster {
+  display: none;
+}
+@media (min-aspect-ratio: 16/9) {
+  .video-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: -6px;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-section {
+    width: auto;
+    height: 100%;
+    margin-bottom: -6px;
+  }
+}
+.video-text-content {
+  text-align: center;
+  margin-top: -75vh;
+}
+.highlight {
+  color: var(--blue);
+}
+
+/* Part two */
+.left-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 700px;
+}
+.right-side {
+  min-height: 700px;
+}
+.side-content {
+  margin-top: 3rem;
+  width: 90%;
+  margin-bottom: 3rem;
+}
+
+/* Part Three */
+.part-three {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom !important;
+  height: 316px;
+  z-index: -999;
+}
+
+/* Part Four */
+.part-four {
+  background-color: var(--grey);
+}
+.service-icons {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ABOUT US PAGE */
+.mobile-bg {
+  display: none;
+}
+.custom-top-bottom-margins {
+  margin-top: 75px;
+  margin-bottom: 85px;
+}
+.left-image-about {
+  padding: 0px 0px 50px 40px;
+}
+.right-text-about {
+  align-self: flex-end;
+  padding-left: 30px;
+}
+.part-one-about {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.testimonials {
+  margin-bottom: 50px;
+}
+.client-testimonial {
+  text-align: center;
+}
+.testimonial-image {
+  margin: 0 auto;
+  margin-bottom: 20px !important;
+}
+.part-five {
+  margin-bottom: 50px;
+}
+
+/* OUT TEAM PAGE */
+.part-one-team {
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  min-height: 435px;
+}
+.team-image {
+  margin-bottom: 10px;
+}
+.team-card {
+  max-height: none !important;
+  text-align: center;
+}
+.team-card img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.team-card img:hover {
+  cursor: pointer;
+  filter: none !important;
+  -webkit-filter: grayscale(0);
+}
+
+/* OUR SERVICES PAGE */
+.services-section {
+  margin-left: 10px;
+}
+.single-service-index {
+  margin-bottom: 50px;
+}
+.right-text-services {
+  align-self: center;
+}
+.left-text-services {
+  align-self: center;
+}
+.vertical-nav {
+  position: fixed;
+  float: right;
+  width: 8%;
+  left: 90%;
+  top: 30%;
+}
+.vertical-nav-links {
+  border-left: 2px solid black;
+  padding-left: 10px;
+  padding-bottom: 250px;
+}
+.vertical-nav-link {
+  padding-bottom: 20px;
+  color: inherit;
+}
+
+/* CAREERS PAGE */
+.part-one-careers {
+  margin-left: 50px;
+}
+.department-text {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-color: var(--blue);
+  text-decoration-style: double;
+}
+.career-link {
+  text-decoration: none !important;
+  color: inherit;
+}
+.career-link:hover {
+  color: var(--blue);
+}
+.career-form {
+  width: 75%;
+  margin-top: 40px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.custom-input {
+  background: #f8fafc;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+/* Contact Us Page */
+.part-one-contact {
+  min-height: 380px;
+  background-color: rgba(218, 221, 227);
+}
+.contact-header {
+  padding-left: 110px;
+  padding-top: 100px;
+}
+.part-two-contact {
+  background-color: var(--grey);
+  padding-bottom: 100px;
+}
+.right-form-contact {
+  background-color: var(--white);
+  padding: 115px 20px 70px 115px;
+  margin-top: -220px;
+}
+.left-image-contact {
+  margin-right: -100px;
+  margin-top: -120px;
+  z-index: 1000;
+}
