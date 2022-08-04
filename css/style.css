@@ -178,11 +178,12 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 350px;
+    min-height: 450px;
   }
   .top-text-content h1 {
     text-align: center;
-    margin-top: -210px;
+    margin-top: -265px;
+    margin-bottom: 200px;
   }
   /* Part 2 */
   .left-image {

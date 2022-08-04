@@ -17,6 +17,7 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg sticky-top bg-custom-dark">
@@ -119,10 +120,10 @@
         class="col-md-6 col-sm-6 col-12 d-flex align-items-center justify-content-center right-side"
       >
         <div class="side-content">
-          <h2 class="header-font-bold mb-4">
+          <h2 class="header-font-bold mb-4" data-aos="fade-left">
             A Different <span class="highlight">Approach</span>
           </h2>
-          <p>
+          <p data-aos="fade-up">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -148,6 +149,7 @@
             class="btn btn-outline-primary custom-button mt-4"
             name="button"
             href="about.html"
+            data-aos="fade-up"
           >
             Learn More
           </a>
@@ -167,7 +169,7 @@
       <div class="service-icons d-flex justify-content-center row">
         <!-- Services list here -->
         <div class="col-md-4 col-sm-4 col-6 d-flex justify-content-center">
-          <div class="custom-card">
+          <div class="custom-card" data-aos="flip-up">
             <img
               src="img/icons/1.png"
               class="img-fluid schring-icon"
@@ -176,8 +178,10 @@
             <p>Quality Assuarance</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-4 col-6 d-flex justify-content-center">
-          <div class="custom-card">
+        <div
+          class="col-md-4 col-sm-4 col-6 d-flex justify-content-center animate__animated animate__backInLeft"
+        >
+          <div class="custom-card" data-aos="flip-up">
             <img
               src="img/icons/2.png"
               class="img-fluid schring-icon"
@@ -186,8 +190,10 @@
             <p>Quality Assuarance</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-4 col-6 d-flex justify-content-center">
-          <div class="custom-card">
+        <div
+          class="col-md-4 col-sm-4 col-6 d-flex justify-content-center animate__animated animate__backInLeft"
+        >
+          <div class="custom-card" data-aos="flip-up">
             <img
               src="img/icons/3.png"
               class="img-fluid schring-icon"
@@ -196,8 +202,10 @@
             <p>Project Management</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-4 col-6 d-flex justify-content-center">
-          <div class="custom-card">
+        <div
+          class="col-md-4 col-sm-4 col-6 d-flex justify-content-center animate__animated animate__backInLeft"
+        >
+          <div class="custom-card" data-aos="flip-up">
             <img
               src="img/icons/4.png"
               class="img-fluid schring-icon"
@@ -206,8 +214,10 @@
             <p>Quality Assuarance</p>
           </div>
         </div>
-        <div class="col-md-4 col-sm-4 col-6 d-flex justify-content-center">
-          <div class="custom-card">
+        <div
+          class="col-md-4 col-sm-4 col-6 d-flex justify-content-center animate__backInLeft"
+        >
+          <div class="custom-card" data-aos="flip-up">
             <img
               src="img/icons/5.png"
               class="img-fluid schring-icon"
@@ -221,10 +231,10 @@
 
     <!-- Section Five -->
     <section class="map-section">
-      <h2 class="header-font-bold mt-5 text-center">
+      <h2 class="header-font-bold mt-5 text-center" data-aos="fade-down">
         Our <span class="highlight">Global</span> Footprint
       </h2>
-      <img src="img/map.png" class="img-fluid" alt="" />
+      <img src="img/map.png" class="img-fluid" alt="" data-aos="zoom-in" />
     </section>
     <footer class="navbar">
       <div class="container-fluid">
@@ -283,5 +293,6 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

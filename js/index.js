@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  AOS.init();
   $(".testimonials").slick({
     infinite: true,
     slidesToShow: 1,
