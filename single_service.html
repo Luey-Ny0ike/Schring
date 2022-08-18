@@ -68,8 +68,27 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="services.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Services
+                </a>
+                <ul class="dropdown-menu bg-custom-dark">
+                  <li>
+                    <a class="dropdown-item" href="services.html"
+                      >All Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="single_service.html"
+                      >Services Two</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="careers.html">Careers</a>
@@ -84,6 +103,15 @@
     </nav>
 
     <!-- Section one -->
+
+    <!-- Top section -->
+    <section
+      class="top-section  d-flex align-items-center justify-content-center"
+    >
+      <h1 class="header-font-bold text-center large-header-text">
+        Contractor Services
+      </h1>
+    </section>
     <section
       class="mobile-bg"
       style="background: linear-gradient(to bottom, rgba(96, 175, 255, 0.55), rgba(96, 175, 255, 0.55)), url('img/image4.png');"
@@ -93,11 +121,6 @@
       </h2>
     </section>
     <section class="section-one">
-      <h1
-        class="header-font-bold text-center custom-top-bottom-margins large-header-text"
-      >
-        Contractor Services
-      </h1>
       <div class="container row part-one-about">
         <div class="col-md-6 col-sm-6 col-12 left-image-about">
           <img src="img/image4.png" class="img-fluid" alt="About Us image" />
@@ -174,7 +197,11 @@
     <footer class="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="Logo" class="img-fluid logo" />
+          <img
+            src="img/logo.png"
+            alt="Logo"
+            class="img-fluid logo logo-footer"
+          />
         </a>
         <div class="ms-auto">
           <!-- Linkedin icon -->

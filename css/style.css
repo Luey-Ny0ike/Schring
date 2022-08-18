@@ -30,6 +30,12 @@ p {
   font-weight: 400;
 }
 
+.top-section {
+  background-color: #d9d9d9;
+  height: 80vh;
+  margin-bottom: 50px;
+}
+
 .custom-button {
   color: var(--blue);
   border-radius: 20px;
@@ -82,8 +88,11 @@ p {
 }
 
 /* Navbar styling */
+nav {
+  border-bottom: 1px solid var(--grey);
+}
 nav .navbar-nav li a {
-  color: var(--white) !important;
+  color: var(--dark-bg) !important;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
@@ -91,16 +100,23 @@ nav .navbar-nav li a:hover {
   color: var(--blue) !important;
 }
 .bg-custom-dark {
-  background-color: var(--dark-bg);
+  background-color: var(--white);
 }
 .logo {
   max-width: 100px;
+  filter: invert(100%);
+}
+.logo-footer {
+  filter: none;
 }
 .custom-right-margin {
   margin-right: 40px;
 }
 .nav-item {
   padding-right: 14px;
+}
+.dropdown-toggle::after {
+  visibility: hidden;
 }
 /* .nav-btn {
   border-color: var(--white);
@@ -170,6 +186,24 @@ footer {
 
 /* Mobile devices */
 @media (max-width: 500px) {
+  /* Navbar Styling */
+  .dropdown-toggle::after {
+    visibility: visible;
+    margin-left: 95%;
+  }
+  .custom-margin-right {
+    margin-right: 0px !important;
+  }
+  .dropdown-menu {
+    border-top: 3px solid var(--grey);
+    border-bottom: 3px solid var(--grey);
+    border-right: none;
+    border-left: none;
+    width: 125%;
+  }
+  .top-section {
+    display: none !important;
+  }
   #actual-video {
     display: none;
   }
@@ -254,7 +288,7 @@ footer {
 
   /* Teams Page */
   .part-one-team {
-    min-height: 250px !important;
+    min-height: 50vh !important;
   }
 
   /* Services Page */
@@ -267,6 +301,13 @@ footer {
   .vertical-nav {
     display: none;
   }
+  .services-mobile-header {
+    display: flex !important;
+    height: 50vh;
+  }
+  .services-mobile-header-text {
+    display: block !important;
+  }
 
   /* Careers Page */
   .part-one-careers {
@@ -277,12 +318,12 @@ footer {
   }
 
   /* Contact Us Page */
-  .left-image-contact {
-    display: none;
+  .part-two-contact {
+    padding-top: 30px !important;
   }
-  .right-form-contact {
-    padding-left: 20px !important;
-    margin-left: 10px !important;
+  .contact-section {
+    width: 90% !important;
+    padding: 10px !important;
   }
 }
 
@@ -354,8 +395,8 @@ footer {
   display: none;
 }
 .custom-top-bottom-margins {
-  margin-top: 75px;
-  margin-bottom: 85px;
+  margin-top: 35px;
+  margin-bottom: 45px;
 }
 .left-image-about {
   padding: 0px 0px 50px 40px;
@@ -388,23 +429,38 @@ footer {
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  min-height: 435px;
+  min-height: 80vh;
 }
 .team-image {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 .team-card {
   max-height: none !important;
   text-align: center;
-}
-.team-card img {
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
-}
-.team-card img:hover {
+  margin-top: 0px !important;
   cursor: pointer;
-  filter: none !important;
-  -webkit-filter: grayscale(0);
+}
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.team-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
 }
 
 /* OUR SERVICES PAGE */
@@ -481,15 +537,12 @@ footer {
 }
 .part-two-contact {
   background-color: var(--grey);
-  padding-bottom: 100px;
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
-.right-form-contact {
+.contact-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 80px;
   background-color: var(--white);
-  padding: 115px 20px 70px 115px;
-  margin-top: -220px;
-}
-.left-image-contact {
-  margin-right: -100px;
-  margin-top: -120px;
-  z-index: 1000;
 }

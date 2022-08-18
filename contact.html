@@ -35,7 +35,7 @@
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header bg-custom-dark">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
               <img src="img/logo.png" alt="Logo" class="img-fluid logo" />
             </a>
             <button
@@ -67,8 +67,27 @@
                   </li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="services.html">Services</a>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="services.html"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Services
+                </a>
+                <ul class="dropdown-menu bg-custom-dark">
+                  <li>
+                    <a class="dropdown-item" href="services.html"
+                      >All Services</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="single_service.html"
+                      >Services Two</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="careers.html">Careers</a>
@@ -83,18 +102,17 @@
     </nav>
 
     <!-- Section One -->
-    <section class="part-one-contact">
-      <h2 class="header-font-bold contact-header">
+    <section
+      class="part-one-contact d-flex align-items-center justify-content-center"
+    >
+      <h2 class="header-font-bold">
         Contact Us
       </h2>
     </section>
 
     <section class="part-two-contact">
-      <div class="container-fluid row">
-        <div class="col-md-5 col-sm-5 left-image-contact">
-          <img src="img/image5.png" alt="Contact Us Image" class="img-fluid" />
-        </div>
-        <div class="col-md-7 col-sm-12 col-12 right-form-contact">
+      <div class="container contact-section row">
+        <div class="col-12">
           <div class="contact-form">
             <form class="row" action="index.html" method="post">
               <div class="col-md-6 col-sm-6 col-12">
@@ -165,7 +183,11 @@
     <footer class="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-          <img src="img/logo.png" alt="Logo" class="img-fluid logo" />
+          <img
+            src="img/logo.png"
+            alt="Logo"
+            class="img-fluid logo logo-footer"
+          />
         </a>
         <div class="ms-auto">
           <!-- Linkedin icon -->
