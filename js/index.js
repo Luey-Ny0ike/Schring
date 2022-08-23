@@ -36,4 +36,19 @@ $(document).ready(function() {
     autoplay: true,
     autoplaySpeed: 4000
   });
+
+  $(".single-service-index").mouseenter(function() {
+    var id = $(this).attr("id");
+    $("a").removeClass("active");
+    $("[href*=" + id + "]").addClass("active");
+  });
+
+  $(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 300) {
+      $(".vertical-nav").fadeIn();
+    } else {
+      $(".vertical-nav").fadeOut();
+    }
+  });
 });
