@@ -163,6 +163,11 @@ footer {
     margin-top: -250px;
     margin-bottom: 170px;
   }
+  /* OUR TEAMS PAGE */
+  .team-card {
+    min-width: 190px !important;
+  }
+
   /* Careers Page */
   .part-one-careers {
     margin-left: 20px !important;
@@ -289,6 +294,9 @@ footer {
   /* Teams Page */
   .part-one-team {
     min-height: 50vh !important;
+  }
+  .team-card {
+    min-width: 180px !important;
   }
 
   /* Services Page */
@@ -439,6 +447,9 @@ footer {
   text-align: center;
   margin-top: 0px !important;
   cursor: pointer;
+  min-width: 250px;
+  height: auto;
+  margin-bottom: 65px !important;
 }
 .flip-card-inner {
   position: relative;
