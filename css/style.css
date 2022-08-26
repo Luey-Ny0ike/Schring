@@ -36,7 +36,7 @@ p {
 
 .top-section {
   background-color: #d9d9d9;
-  height: 85vh;
+  height: 90vh;
   margin-bottom: 50px;
 }
 
@@ -315,10 +315,13 @@ footer {
   }
   .services-mobile-header {
     display: flex !important;
-    height: 50vh;
+    height: 70vh;
   }
   .services-mobile-header-text {
     display: block !important;
+  }
+  .single-service-index {
+    height: 70vh !important;
   }
 
   /* Careers Page */
@@ -481,9 +484,11 @@ footer {
 /* OUR SERVICES PAGE */
 .services-section {
   margin-left: 10px;
+  scroll-snap-type: y mandatory;
 }
 .single-service-index {
-  margin-bottom: 50px;
+  min-height: 100vh;
+  scroll-snap-align: middle;
 }
 .right-text-services {
   align-self: center;
